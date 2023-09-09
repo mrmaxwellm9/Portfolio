@@ -1,0 +1,13 @@
+{
+    "compilerOptions": {
+      "target": "ES6", // or "ES6" if you prefer
+      "module": "CommonJS",
+      "outDir": "./dist",
+      "rootDir": "./scripts",
+      "strict": true,
+      "esModuleInterop": true,
+      "lib": ["ES2015", "dom"] // Add "dom" here
+    },
+    "include": ["scripts/**/*.ts"],
+    "exclude": ["node_modules"]
+  }
