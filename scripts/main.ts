@@ -97,7 +97,7 @@ if (lightbox) {
 //Code for typewriter functionality
 //https://medium.com/front-end-weekly/how-to-create-typing-effect-in-css-and-js-3252dd807f0a
 const skillsList: string[] = ["Python", "C", "C++", "C#", "HTML", "CSS", "SCS", "JavaScript", "SQLite", "Java", "TypeScript", "Django", "ASP.NET"];
-const iAmList: string[] = ["Innovative", "Detail-Oriented", "Adaptable", "A Quick Learner", "Critical Thinker", "Problem Solver", "A Self-Starter", "A Tech Enthusiast"];
+const iAmList: string[] = ["Innovative", "Detail-Oriented", "Adaptable", "A Quick Learner", "A Critical Thinker", "A Problem Solver", "A Self-Starter", "A Tech Enthusiast"];
 
 async function typeWord(word: string, element: HTMLElement, delay: number) {
     
