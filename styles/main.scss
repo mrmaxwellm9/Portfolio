@@ -31,8 +31,8 @@ nav ul {
     display: flex;
     justify-content: center;
     user-select: none;
-    -webkit-user-select: none; 
-    -moz-user-select: none; 
+    -webkit-user-select: none;
+    -moz-user-select: none;
 }
 
 nav li {
@@ -62,11 +62,12 @@ section {
     display: none;
 }
 
-$gradient-colors: 'lightgray';
+$gradient-colors: "lightgray";
 @for $i from 1 through 18 {
-  $gradient-colors: #{$gradient-colors}, 'lightgray';
+    $gradient-colors:
+        #{$gradient-colors},
+        "lightgray";
 }
-
 
 #about {
     background-image: linear-gradient(#333, #{$gradient-colors}, #f2f2f2);
@@ -74,12 +75,12 @@ $gradient-colors: 'lightgray';
     caret-color: transparent;
     outline: none;
     padding: 2%;
-  }
+}
 
 #projects {
-  display: none;
-  color: #333;
-  background-image: linear-gradient(#333, #{$gradient-colors}, #f2f2f2);
+    display: none;
+    color: #333;
+    background-image: linear-gradient(#333, #{$gradient-colors}, #f2f2f2);
 }
 
 /* Footer styling */
@@ -106,7 +107,7 @@ footer {
     padding: 20px;
     border: 1px solid #ccc;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    z-index: 1000; 
+    z-index: 1000;
 }
 .popup-content {
     background-color: #fff;
@@ -146,13 +147,13 @@ footer {
 
 .contact-form {
     background-color: #fff;
-    padding: 10px; 
+    padding: 10px;
     border-radius: 5px;
-    width: 90%; 
+    width: 90%;
 }
 
 .form-group {
-    margin-bottom: 10px; 
+    margin-bottom: 10px;
     text-align: left;
 }
 
@@ -160,14 +161,14 @@ label {
     display: block;
     font-weight: bold;
     margin-bottom: 5px;
-    font-size: 14px; 
+    font-size: 14px;
 }
 
 input[type="text"],
 input[type="email"],
 textarea {
     width: 100%;
-    padding: 6px; 
+    padding: 6px;
     border: 1px solid #ccc;
     border-radius: 3px;
     font-size: 14px;
@@ -177,11 +178,11 @@ button {
     background-color: #ff5733;
     color: #fff;
     border: none;
-    padding: 8px 16px; 
+    padding: 8px 16px;
     border-radius: 3px;
     cursor: pointer;
     font-weight: bold;
-    font-size: 14px; 
+    font-size: 14px;
 }
 
 button:hover {
@@ -201,7 +202,7 @@ footer {
     caret-color: transparent;
     outline: none;
 }
-  
+
 /* Style for the "Contact Me" button */
 #contactButton {
     background-color: #ff5733;
@@ -211,23 +212,23 @@ footer {
     cursor: pointer;
     transition: background-color 0.3s ease-in-out;
 }
-  
+
 #contactButton:hover {
     background-color: #ff2e00;
 }
-  
+
 /* Style for the social icons */
 .social-icons {
     margin-left: 20px;
 }
-  
+
 .social-icons a {
     text-decoration: none;
     color: #333;
     font-size: 32px;
     margin-right: 16px;
 }
-  
+
 /* Styling for text elements */
 h1,
 h2,
@@ -286,7 +287,7 @@ img {
     align-items: center;
     position: relative;
 }
-  
+
 .project-title {
     text-align: center;
     font-size: 36px;
@@ -297,13 +298,13 @@ img {
     list-style-position: inside;
     font-size: 24px;
     list-style-type: disc;
-    text-align: left; 
+    text-align: left;
     margin: 0 5% 3% 5%;
 }
 
 .github-icon {
     font-size: 72px;
-    color: #0A0A0A;
+    color: #0a0a0a;
     margin-bottom: 10%;
 }
 
@@ -334,7 +335,7 @@ img {
     width: auto;
     padding: 36px;
     margin-top: -22px;
-    color:red;
+    color: red;
     font-weight: bold;
     font-size: 32px;
     transition: 0.6s ease;
@@ -359,7 +360,7 @@ img {
     outline: none;
 }
 
-  .project-wrapper .caption-slide {
+.project-wrapper .caption-slide {
     position: absolute;
     top: 0;
     right: -100%; /* Start off-screen to the right */
@@ -367,14 +368,14 @@ img {
     color: white; /* Adjust text color */
     padding: 10px;
     transition: right 0.5s; /* Transition property and duration */
-  }
+}
 
-  .project-wrapper > .slideshow-container:hover .caption-slide,
-  .project-wrapper > .slideshow-container:hover .caption-slide {
+.project-wrapper > .slideshow-container:hover .caption-slide,
+.project-wrapper > .slideshow-container:hover .caption-slide {
     right: 0%; /* Slide in on hover or when active */
-  }
+}
 
-  .project-wrapper2 .caption-slide {
+.project-wrapper2 .caption-slide {
     position: absolute;
     top: 0;
     left: -100%; /* Start off-screen to the right */
@@ -383,19 +384,19 @@ img {
     padding: 10px;
     transition: left 0.5s; /* Transition property and duration */
     overflow: visible;
-  }
+}
 
-  .project-wrapper2 > .slideshow-container:hover .caption-slide,
-  .project-wrapper2 > .slideshow-container:hover .caption-slide {
+.project-wrapper2 > .slideshow-container:hover .caption-slide,
+.project-wrapper2 > .slideshow-container:hover .caption-slide {
     left: 0%; /* Slide in on hover or when active */
-  }
+}
 
-  /*Lightbox styles*/
-  .image-container {
+/*Lightbox styles*/
+.image-container {
     cursor: pointer;
-  }
-  
-  .lightbox {
+}
+
+.lightbox {
     display: none;
     position: fixed;
     top: 0;
@@ -407,17 +408,16 @@ img {
     z-index: 1000;
     align-items: center;
     justify-content: center;
-  }
-  
-  #lightbox-image {
+}
+
+#lightbox-image {
     max-width: 77%;
     max-height: 77%;
     margin: auto;
     margin-top: 6.25%;
     display: block;
     z-index: 1000;
-  }
-
+}
 
 /*Typewriter effect and about styling*/
 .about-content {
@@ -432,17 +432,24 @@ img {
     height: 42px;
     background-color: black;
     margin-left: 2px;
-    animation: blink .6s linear infinite alternate;
+    animation: blink 0.6s linear infinite alternate;
     position: relative;
     top: 6px;
 }
 
-
 @keyframes blink {
-  0% {opacity: 1;}
-  40% {opacity: 1;}
-  60% {opacity: 0;}
-  100% {opacity: 0;}
+    0% {
+        opacity: 1;
+    }
+    40% {
+        opacity: 1;
+    }
+    60% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
 }
 
 #workedIn {
@@ -465,7 +472,6 @@ img {
     font-size: 48px;
 }
 
-
 .myName {
     /*https://codepen.io/WillyIsCoding/pen/mxVLJK*/
     font-family: Hack, monospace;
@@ -474,33 +480,4 @@ img {
     position: relative;
     top: -5%;
     grid-row: 1;
-    background: #0A0A0A;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-.myName:after{
-    /*https://codepen.io/WillyIsCoding/pen/mxVLJK*/
-    content: "Maxwell Mayer";
-    position: absolute;
-    text-align: center;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(45deg, rgba(255,255,255,0) 45%, rgba(255,255,255,0.8) 50%,
-    rgba(255,255,255,0) 55%,rgba(255,255,255,0) 100%);
-    -webkit-background-clip: text;
-    background-size: 200%;
-    animation: shine 10s infinite;
-    animation-delay: 0s;
-}
-
-@keyframes shine{
-    0% {
-      background-position: 25%;
-    }
-    100% {
-      background-position: 100%;
-    }
 }
