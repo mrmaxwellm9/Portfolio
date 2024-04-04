@@ -248,7 +248,8 @@ ul.project-ul {
 }
 
 .mySlides1,
-.mySlides3 {
+.mySlides3,
+.mySlides5 {
   display: none;
   text-align: left;
 }
